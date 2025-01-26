@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgjkb50j2u666"]
+
+[ext_resource type="FontFile" uid="uid://mwvj8yqjvlmx" path="res://Assets/Fonts/DMMono-Medium.ttf" id="1_8v6ew"]
+[ext_resource type="Script" path="res://PipboyStartup/StartUpTextScrollController.cs" id="1_nf2dd"]
+
+[node name="StartUpTextScrollController" type="Control" node_paths=PackedStringArray("textLabel")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nf2dd")
+textLabel = NodePath("CenterContainer/MarginContainer/LabelContainerControl/RichTextLabel")
+metadata/_custom_type_script = ExtResource("1_nf2dd")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="LabelContainerControl" type="Control" parent="CenterContainer/MarginContainer"]
+custom_minimum_size = Vector2(500, 480)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CenterContainer/MarginContainer/LabelContainerControl"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0, 1, 0, 1)
+theme_override_constants/line_separation = -3
+theme_override_fonts/normal_font = ExtResource("1_8v6ew")
+theme_override_font_sizes/normal_font_size = 12
+text = "Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text 
+
+
+
+
+
+\\n
+
+
+ 
+ 
+ 
+ 
+"
+scroll_active = false
+scroll_following = true
+shortcut_keys_enabled = false

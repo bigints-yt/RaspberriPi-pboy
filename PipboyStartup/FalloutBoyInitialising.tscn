@@ -1,0 +1,185 @@
+[gd_scene load_steps=23 format=3 uid="uid://dfytp6flwm0fw"]
+
+[ext_resource type="FontFile" uid="uid://mwvj8yqjvlmx" path="res://Assets/Fonts/DMMono-Medium.ttf" id="1_1dx6e"]
+[ext_resource type="Texture2D" uid="uid://bme08jv3j7emk" path="res://Assets/Textures/FalloutBoy_Intro.png" id="1_cdcxn"]
+[ext_resource type="Script" path="res://PipboyStartup/PipBoyInitController.cs" id="1_mqx0f"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_cdcxn"]
+viewport_path = NodePath("SubViewport")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1dx6e"]
+atlas = ExtResource("1_cdcxn")
+region = Rect2(0, 0, 408, 408)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mqx0f"]
+atlas = ExtResource("1_cdcxn")
+region = Rect2(408, 0, 408, 408)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nclnq"]
+atlas = ExtResource("1_cdcxn")
+region = Rect2(816, 0, 408, 408)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qwyhd"]
+atlas = ExtResource("1_cdcxn")
+region = Rect2(1224, 0, 408, 408)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ky2xo"]
+atlas = ExtResource("1_cdcxn")
+region = Rect2(1632, 0, 408, 408)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gp5vx"]
+atlas = ExtResource("1_cdcxn")
+region = Rect2(2040, 0, 408, 408)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8rdoo"]
+atlas = ExtResource("1_cdcxn")
+region = Rect2(2448, 0, 408, 408)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ir2jf"]
+atlas = ExtResource("1_cdcxn")
+region = Rect2(2856, 0, 408, 408)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b0fn2"]
+atlas = ExtResource("1_cdcxn")
+region = Rect2(3264, 0, 408, 408)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0qoj8"]
+atlas = ExtResource("1_cdcxn")
+region = Rect2(3672, 0, 408, 408)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ctaeu"]
+atlas = ExtResource("1_cdcxn")
+region = Rect2(4080, 0, 408, 408)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_343qv"]
+atlas = ExtResource("1_cdcxn")
+region = Rect2(4488, 0, 408, 408)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_30xka"]
+atlas = ExtResource("1_cdcxn")
+region = Rect2(4896, 0, 408, 408)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5txlo"]
+atlas = ExtResource("1_cdcxn")
+region = Rect2(5304, 0, 408, 408)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bkwb1"]
+atlas = ExtResource("1_cdcxn")
+region = Rect2(5712, 0, 408, 408)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3kfdi"]
+atlas = ExtResource("1_cdcxn")
+region = Rect2(6120, 0, 408, 408)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_edlnb"]
+atlas = ExtResource("1_cdcxn")
+region = Rect2(6528, 0, 408, 408)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7g3ie"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1dx6e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mqx0f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nclnq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qwyhd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ky2xo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gp5vx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8rdoo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ir2jf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b0fn2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0qoj8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ctaeu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_343qv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_30xka")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5txlo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bkwb1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3kfdi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_edlnb")
+}],
+"loop": false,
+"name": &"intro",
+"speed": 10.0
+}]
+
+[node name="PipBoyInitController" type="Control" node_paths=PackedStringArray("sprite", "initLabel")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mqx0f")
+sprite = NodePath("SubViewport/AnimatedSprite2D")
+initLabel = NodePath("MarginContainer/VBoxContainer/InitLabel")
+metadata/_custom_type_script = ExtResource("1_mqx0f")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 140
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+modulate = Color(0, 1, 0, 1)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = SubResource("ViewportTexture_cdcxn")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="InitLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_1dx6e")
+theme_override_font_sizes/font_size = 11
+text = "INITIALIZING"
+horizontal_alignment = 1
+
+[node name="SubViewport" type="SubViewport" parent="."]
+transparent_bg = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="SubViewport"]
+position = Vector2(220, 256)
+sprite_frames = SubResource("SpriteFrames_7g3ie")
+animation = &"intro"

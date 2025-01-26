@@ -1,0 +1,11 @@
+res://Main.tscn
+res://PipboyStartup/StartupTextScroll.tscn
+res://PipboyStartup/StartUpTextScroll.cs
+res://PipboyStartup/PipBoyOSStartUp.tscn
+res://PipboyStartup/PipBoyOSTextController.cs
+res://PipboyStartup/StartUpManager.cs
+res://PipboyStartup/StartUpTextScrollController.cs
+res://PipboyStartup/PipBoyOSTextController.tscn
+res://PipboyStartup/StartUpTextScrollController.tscn
+res://PipboyStartup/FalloutBoyInitialising.tscn
+res://PipboyStartup/PipBoyInitController.cs

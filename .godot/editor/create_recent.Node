@@ -1,0 +1,14 @@
+PipBoyInitController
+Label
+VBoxContainer
+SubViewport
+TextureRect
+AnimatedSprite2D
+HBoxContainer
+MarginContainer
+StartUpTextScrollController
+PipBoyOSTextController
+StartUpManager
+Control
+CenterContainer
+Node
